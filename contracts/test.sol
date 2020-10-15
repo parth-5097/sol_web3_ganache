@@ -1,14 +1,13 @@
 pragma solidity >=0.4.17;
 
 contract test {
-    string private name = "Ire";
-    string str = "Darkknight";
+    string private dataHash = "root";
 
-    function getName() public view returns (string memory) {
-        return name;
+    function getString() public view returns (string memory) {
+        return dataHash;
     }
 
-    function setName(string memory newName) public {
-        name = newName;
+    function setString(string memory newHash) public {
+        dataHash = newHash;
     }
 }
